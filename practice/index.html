@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>use SetTimeout</h1>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <script>
+        setTimeout(myFunction,3000)
+        function myFunction(){
+            document.getElementById("demo").innerHTML="I Hate You"
+        }
+        setInterval(myFunction1,1000)
+        function myFunction1(){
+            let date=new Date()
+            document.getElementById('demo1').innerHTML=date.getDate()+"/"+date.getDay()+"/"+date.getFullYear()+ "<br>"+ date.getHours()+":"+date.getMinutes()+":"+date.getSeconds()
+        }
+    </script>
+</body>
+</html>
